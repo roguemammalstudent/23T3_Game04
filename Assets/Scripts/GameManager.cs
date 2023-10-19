@@ -13,4 +13,9 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
     }
+
+    public void PlaceObject(GameObject object)
+    {
+
+    }
 }
