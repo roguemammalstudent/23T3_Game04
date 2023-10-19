@@ -3,14 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ObjectCard : MonoBehaviour, IDragHandler
+public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     public GameObject object_Drag;
     public GameObject object_Game;
+    public Canvas canvas;
+    private GameObject objectDragInstance;
 
     public void OnDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        objectDragInstance.transform.position = Input.mousePosition;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        objectDragInstance = Instantiate(object_Drag, canvas.transform);
+        objectDragInstance.transform.position = Input.mousePosition;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Destroy (objectDragInstance);
     }
 
 }
