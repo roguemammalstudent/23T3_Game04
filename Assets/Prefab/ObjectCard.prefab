@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8099264639227545919}
   - component: {fileID: 3015263976902764219}
   - component: {fileID: 3546714139853995972}
-  - component: {fileID: -6131158050114347263}
+  - component: {fileID: -453177209222985431}
   m_Layer: 5
   m_Name: ObjectCard
   m_TagString: Untagged
@@ -122,7 +122,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
---- !u!114 &-6131158050114347263
+--- !u!114 &-453177209222985431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,5 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f553ce7f1bc678949b7a867160b153b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object_Drag: {fileID: 8052907811235964993, guid: 23d62c6bfa7089749879be33b6f9e173, type: 3}
-  object_Game: {fileID: 8052907811235964993, guid: e9feef31f1e9c3d43a1dafc3adbd7d88, type: 3}
+  object_Drag: {fileID: 0}
+  object_Game: {fileID: 0}
+  canvas: {fileID: 0}

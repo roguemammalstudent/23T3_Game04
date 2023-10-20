@@ -8,7 +8,7 @@ public class ObjectContainer : MonoBehaviour
     public bool isFull;
     public GameManager gameManager;
 
-    private void Awake()
+    private void Start()
     {
         gameManager = GameManager.instance;
     }
